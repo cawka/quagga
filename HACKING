@@ -57,8 +57,8 @@ $) is:
 
 See line 2 of HACKING for an example;
 
-This placeholder string will be expanded out by the 'git archive' commands,
-wihch is used to generate the tar archives for snapshots and releases.
+This placeholder string will be expanded out by the 'git archive' command,
+which is used to generate the tar archives for snapshots and releases.
 
 Please document fully the proper use of a new function in the header file
 in which it is declared.  And please consult existing headers for
@@ -72,7 +72,7 @@ If changing an exported interface, please try to deprecate the interface in
 an orderly manner. If at all possible, try to retain the old deprecated
 interface as is, or functionally equivalent. Make a note of when the
 interface was deprecated and guard the deprecated interface definitions in
-the header file, ie:
+the header file, i.e.:
 
 /* Deprecated: 20050406 */
 #if !defined(QUAGGA_NO_DEPRECATED_INTERFACES)
@@ -104,7 +104,7 @@ COMPILE-TIME CONDITIONAL CODE
 
 Please think very carefully before making code conditional at compile time,
 as it increases maintenance burdens and user confusion. In particular,
-please avoid gratuitious --enable-.... switches to the configure script -
+please avoid gratuitous --enable-.... switches to the configure script -
 typically code should be good enough to be in Quagga, or it shouldn't be
 there at all.
 
@@ -153,7 +153,7 @@ The reason for such itemised commit messages is to encourage the author to
 self-review every line of the patch, as well as provide reviewers an index
 of which changes are intended, along with a short description for each.
 Some discretion is obviously required.  A C-to-english description is not
-desireable.  For short patches, a per-function/file break-down may be
+desirable.  For short patches, a per-function/file break-down may be
 redundant.  For longer patches, such a break-down may be essential.
 
 An example (where the general discussion is obviously somewhat redundant,
@@ -187,7 +187,7 @@ using the srcdir variable.
 
 RELEASE PROCEDURE
 
-* Tag the apppropriate commit with a release tag (follow existing
+* Tag the appropriate commit with a release tag (follow existing
   conventions).
   [This enables recreating the release, and is just good CM practice.]
 
@@ -250,7 +250,7 @@ installed together.
 GIT COMMIT SUBSMISSION
 
 The preferred method for changes is to provide git commits via a
-publically-accessible git repository.
+publicly-accessible git repository.
 
 All content guidelines in PATCH SUBMISSION apply.
 
@@ -265,7 +265,7 @@ PATCH SUBMISSION
     git diff -up mybranch..remotes/quagga.net/master
 
   It is preferable to use git format-patch, and even more preferred to
-  publish a git repostory.
+  publish a git repository.
 
   If not using git format-patch, Include the commit message in the email.
 
@@ -302,7 +302,7 @@ PATCH APPLICATION
   argument to git-commit, if required, to ensure proper attribution (you
   should still be listed as committer)
 
-* Immediately after commiting, double-check (with git-log and/or gitk). If
+* Immediately after committing, double-check (with git-log and/or gitk). If
   there's a small mistake you can easily fix it with 'git commit --amend ..'
 
 * By committing a patch, you are responsible for fixing problems
